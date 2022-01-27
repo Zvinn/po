@@ -29,5 +29,3 @@ ALTER TABLE Protocols ADD CONSTRAINT protocol_user_con FOREIGN KEY (UserID_fk) R
 ALTER TABLE Hospitations ADD CONSTRAINT protocol_class_con FOREIGN KEY (ClassID_fk) REFERENCES Classes (ID);
 ALTER TABLE Schedules ADD CONSTRAINT semester_schedule_con FOREIGN KEY (SemesterID_fk) REFERENCES Semesters (ID);
 ALTER TABLE Hospitations ADD CONSTRAINT hosp_user_con FOREIGN KEY (UserID_fk) REFERENCES Users (ID);
-
-INSERT INTO protocols (UserID_fk, HospitationID_fk, CreationDate, Rating, Appeal) VALUES (16, 32, '1993-11-12', {'5', '4.5', '5.5', '4', '3.5', 'Nie dotyczy', '4', '4', '5'}, f);
